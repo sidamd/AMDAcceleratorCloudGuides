@@ -1,2 +1,4 @@
-# AMDAcceleratedCloudGuides
-Guides and FAQ for AMD Accelerated Cloud Users
+# Welcome to AMD Accelerated Cloud (AAC) Reference Documentation
+
+## Getting Started
+
