@@ -4,8 +4,8 @@
 Contact your AMD Sponsor to sign up for access AMD Accelerated Cloud resources.
 ### How to Login to Web Interface
 Go to https://aac.amd.com
-### How to SSH to Slurm Cluster Login Node
-1. To SSH to AAC Plano Slurm Cluster, from the laptop or system used to generate SSH keys for AAC User Account Registration, enter the following at the Terminal or PowerShell prompt:
+### How to SSH to AAC Plano Slurm Cluster
+1. From the laptop or system used to generate SSH keys for AAC User Account Registration, enter the following at the Terminal or PowerShell prompt to SSH to the AAC Plano Slurm cluster:
    ```
    ssh <your_userid>@aac1.amd.com
    ```
