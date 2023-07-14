@@ -18,7 +18,7 @@ For questions or support requests, please email them to dl.dcgpu.aac.service-req
 
 ### The AAC Web Interface has moved to https://aac.amd.com 
 
-### How to Fix SSH to `aac1.amd.com` failed with `Host key verification failed` message
+### How to Fix `ssh <USERID>@aac1.amd.com` failed with `Host key verification failed` message
 Because the Slurm login node has changed from `dell-r08-01` to `pl1vm1pctlnode02` the host key fingerprint has changed. SSH users may see a failure to login with the a *WARNING* message such as one shown below. Please update `$HOME/.ssh/known_hosts` by *removing* the existing entries for `dell-r08-01` and retry to `SSH` to `aac1.amd.com` AAC Plano Slurm cluster login node and accept the new fingerprints:
 ```
 ECDSA key fingerprint is SHA256:u1u0/uh0GLcs19KNHrmZIA6EDLMvJACK5y2fMkVg1fg.
