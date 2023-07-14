@@ -1,4 +1,4 @@
-# Welcome to AMD Accelerated Cloud (AAC) Reference Documentation
+# Welcome to AMD Accelerator Cloud (AAC) Reference Documentation
 
 ## Getting Started
 Contact your AMD Sponsor to sign up for access AMD Accelerated Cloud resources.
@@ -14,11 +14,13 @@ Go to https://aac.amd.com
 ## Contacting AAC Support Team
 For questions or support requests, please email them to dl.dcgpu.aac.service-requests@amd.com
 
+***
 ## July 13-14th AAC Maintenance Update Notice for AAC Users
+***
 
 ### The AAC Web Interface has moved to https://aac.amd.com 
 
-### How to Fix `ssh <USERID>@aac1.amd.com` failed with `Host key verification failed` message
+### 1. How to Fix `ssh <USERID>@aac1.amd.com` failed with `Host key verification failed` message
 Because the Slurm login node has changed from `dell-r08-01` to `pl1vm1pctlnode02` the host key fingerprint has changed. SSH users may see a failure to login with the a *WARNING* message such as one shown below. Please update `$HOME/.ssh/known_hosts` by *removing* the existing entries for `dell-r08-01` and retry to `SSH` to `aac1.amd.com` AAC Plano Slurm cluster login node and accept the new fingerprints:
 ```
 ECDSA key fingerprint is SHA256:u1u0/uh0GLcs19KNHrmZIA6EDLMvJACK5y2fMkVg1fg.
@@ -30,5 +32,19 @@ ECDSA key fingerprint is MD5:76:6a:a4:34:56:c0:04:fa:7f:84:e6:85:0b:f1:65:e5.
    Enter "yes" to accept new host key fingerprint at the prompt to continue to login. 
 
 The new login node prompt of AAC Plano Slurm cluster is: `<USERID>@pl1vm1pctlnode02:~$`
+
+### 2. How to Fix `The selected queue is no longer available` error
+![lhkcojnlehhnkkck](https://github.com/amddcgpuce/AMDAcceleratedCloudGuides/assets/79542249/78c41680-49eb-4d59-bead-00d2b0a5f30e)
+
+#### Solution:
+The Slurm partition/queue names were changed during the maintenance to remove duplicate queue names and standardize on one set. The new partitition names can be used to allocate single node or a multi-node cluster using the Slurm commands.
+```
+1CN128C8G2H_2IB_MI210_RHEL9
+1CN128C8G2H_2IB_MI210_RHEL8
+1CN128C8G2H_2IB_MI210_SLES15
+1CN128C8G2H_2IB_MI210_Ubuntu22
+1CN96C8G1H_4IB_MI250_Ubuntu22
+```
+
 
 
