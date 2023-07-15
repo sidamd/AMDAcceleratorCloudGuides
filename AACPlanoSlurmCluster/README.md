@@ -1,17 +1,17 @@
 ***
 
-# Quick Start SSH to AAC Plano Slurm Cluster User Guide
+# Quick Start Plano Slurm Cluster User Guide
 
 ***
 
-# How to Log in to the AAC Plano Slurm Cluster
+# How to Log in to the Plano Slurm Cluster
 Use `ssh` to login to the AAC Plano Slurm Cluster using your registered `userid` with SSH key
 ```
 ssh registered-userid@aac1.amd.com (for Plano Cluster)
 ```
 To register for an account to access AAC Slurm Cluster, please generate SSH key pair and send public SSH key to get your account created. Contact your AMD Sponsor for more details.
 
-# AAC Slurm Partition Naming Convention
+# Plano Slurm Cluster Partition Naming Convention
 The Slurm partitions are named for each Compute Node, number of CPUs, number of GPUs, number of GPU Hives, cluster interconnect, the GPU product, the Operating System distribution of the nodes as follows:
 
 ###   &lt;1&gt;CN&lt;n&gt;C&lt;m&gt;G&lt;p&gt;H&lowbar;&lt;q&gt;&lt;IC_type&gt;&lowbar;&lt;GPU_Product&gt;&lowbar;&lt;OS&gt;
@@ -20,7 +20,7 @@ where **&lt;1&gt;** is the Compute Node in cluster, **&lt;n&gt;** is total numbe
 
 The following are the currently configured partitions in AAC Plano Slurm cluster:
 ```
-1CN128C8G2H_2IB_MI210_RHEL9*
+1CN128C8G2H_2IB_MI210_RHEL9
 1CN128C8G2H_2IB_MI210_RHEL8
 1CN128C8G2H_2IB_MI210_SLES15
 1CN128C8G2H_2IB_MI210_Ubuntu22
@@ -45,7 +45,7 @@ sbatch -p <specific_parition_name> <path_to_the_sbatch_file>
 There are sample `SBATCH` scripts located in https://github.com/amddcgpuce/sbatchfiles/tree/main to submit AMD Infinity Hub applications (https://www.amd.com/en/technologies/infinity-hub) and other sample applications for 1, 2, 4 and 8 GPU workloads on single compute node which can be used as a starting point to write your own `SBATCH` script for your application.
 Here's a template for an `SBATCH` file for a 1 GPU workload on AAC Plano Slurm cluster: https://github.com/amddcgpuce/sbatchfiles/blob/main/example1gpu.sbatch
 
-*NOTE*: Please include these lines in the SBATCH file for AAC Plano Slurm cluster which load the correct OS-specific module environment corresponding to the OS running on the Compute Node. At the time of this writing, the ROCm 5.6 environment is the latest available. 
+**NOTE**: Please include these lines in the SBATCH file for AAC Plano Slurm cluster which load the correct OS-specific module environment corresponding to the OS running on the Compute Node. At the time of this writing, the ROCm 5.6 environment is the latest available. 
 ```
 source /etc/profile.d/modules.sh
 source /shared/share/aac1plano.modules.bash
@@ -73,7 +73,7 @@ Where <QUEUE_NAME> is the name of Slurm queue/partition name accessible to you
 ### How to create additional SSH sessions to the Allocated Compute Node (previously using `salloc` command)
 Additional SSH connections to the salloc allocated node can be started by the user
 ```
-ssh –J –A <USERID>@aac1.amd.com  <COMPUTENODE_HOSTNAME>
+ssh –J –A <USERID>@aac1.amd.com  <USERID>@<COMPUTENODE_HOSTNAME>
 ```
 # How to Set up ROCm Environment on the Compute Node
 After `ssh` to the compute node, load the ROCm environment using:
@@ -88,7 +88,7 @@ To show the <QUEUE_NAME> accessible, run sshare command
 sshare -nm --format="Partition%32" | tr '[:lower:]' '[:upper:]'
 ```
 ## How to Enable GCC/GFORTRAN toolset 11 on RHEL8
-Use `salloc -p <desired_partition>_RHEL8` to allocate and `ssh` to a Compute Node running RHEL8 OS distribution. To enable gcc-toolset-11, start a new bash shell:
+Use `salloc -p <desired_partition>_RHEL8` to allocate and `ssh` to a Compute Node running RHEL8 OS distribution. To enable `gcc-toolset-11`, start a new bash shell:
 ```
 $ scl enable gcc-toolset-11 bash
 ```
@@ -99,22 +99,29 @@ To start `amddcgpuce/rocm:5.6.0-ub22` docker in interactive mode using `podman` 
 podman run -it --privileged -v $HOME:/workdir -v /shareddata:/shareddata -v /shared:/shared --workdir /workdir docker://amddcgpuce/rocm:5.6.0-ub22 bash
 ```
 This will pull the docker image, start an interactive session with current work directory set to /workdir and start a bash shell.
+
 Create work files under `/workdir` which is `$HOME` and is accessible from ALL nodes with SSH session.
+
 To exit the docker interactive session, type: `exit <return>` to return to SSH login prompt on allocated node.
 
-*Best practices:* Release cache space used by docker images, run: `podman system prune -a`
-Keep work files OUTSIDE container under `$HOME` and use Docker as customized tools environment with packages installed specific for your application development.
-Files under `$HOME` are visible on ALL Compute Nodes to resume work with Docker images on ANY allocated node.
+**Suggested Best Practices:** 
+1. Release cache space used by docker images, run: `podman system prune -a`
+2. Keep work files OUTSIDE container under `$HOME` and use Docker as customized tools environment with packages installed specific for your application development.
+3. Files under `$HOME` are visible on ALL Compute Nodes to resume work with Docker images on ANY allocated node.
+
 #### *NOTE*: Podman is configured to cache Docker images on local storage on the Compute Node. Cached images will be removed periodically to free up disk space
 
 ### How to reattach to a podman container after exiting it
 From SSH session on Compute Node, 
+
 Use `podman ps –a` to get CONTAINER ID of the Exited container. 
+
 Use `podman start <CONTAINER ID>` to start the container
+
 Use `podman attach <CONTAINER ID>` to attach and get back to `bash` shell prompt.
 
 ### How to exit podman container and get back to Compute Node shell prompt
-Type ‘exit’ to exit the interactive session with docker to the Compute Node shell prompt
+Type `exit` to exit the interactive session with docker to the Compute Node shell prompt
 
 ## How to pull a private docker image
 To pull private docker images. First login to the account:
@@ -141,6 +148,7 @@ NOTE: The dot in the command below to execute the shell script
 conda create --name pytorch2.0_py3.8_demo python=3.8
 ```
 At the prompt, `Proceed ([y]/n)?` enter ‘y’ to continue creation of Conda environment 
+
 5. Activate the conda environment
 ```
 conda activate pytorch2.0_py3.8_demo
@@ -179,6 +187,7 @@ Ex: salloc -N 8 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p
 #### Q What does the `Invalid account or account/partition combination specified` error mean?
 It means that user does not have access to nodes behind the `<QUEUE_NAME>` specified.
 The errors `salloc: error: Job submit/allocate failed: Invalid account or account/partition combination specified` and `sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified` indicates a `<QUEUE_NAME>` was specified to which the user does not have access permissions
+
 #### Q: What does the `error: invalid partition specified` error message mean?
 It means that the `<QUEUE_NAME>` specified does not exist. Run `sinfo –o “%P%` to list valid queues.
 #### Q: How do I fix “rocminfo: command not found” or “Command 'rocminfo' not found … Please ask your administrator.”?
