@@ -34,15 +34,6 @@ Use `sinfo` to list all the partitions and available compute nodes
 ```
 sinfo --format="%.32P %.5a %.10l %.16F %N"
 ```
-Example output from the above `sinfo` command:
-```
-                      PARTITION AVAIL  TIMELIMIT   NODES(A/I/O/T) NODELIST
-    1CN128C8G2H_2IB_MI210_RHEL9*    up 1-00:00:00          5/0/0/5 smc-r06-[01-05]
-     1CN128C8G2H_2IB_MI210_RHEL8    up 1-00:00:00          5/0/0/5 smc-r06-[06-10]
-    1CN128C8G2H_2IB_MI210_SLES15    up 1-00:00:00          5/0/0/5 smc-r07-[06-10]
-  1CN128C8G2H_2IB_MI210_Ubuntu22    up 1-00:00:00          5/0/0/5 smc-r07-[02-04],smc-r08-[08-09]
-   1CN96C8G1H_4IB_MI250_Ubuntu22    up 14-00:00:0          8/0/0/8 ubb-r09-[09-15,17]
-```
 The partition with an asterisk `*` is the default partition. However, a partition/queue name must be specified when submitting jobs using Slurm commands.
 
 # How to Submit a Batch Job
