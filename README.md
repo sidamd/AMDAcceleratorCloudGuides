@@ -1,10 +1,10 @@
 # Welcome to AMD Accelerator Cloud (AAC) Reference Documentation
 
 ## Getting Started
-Contact your AMD Sponsor to sign up for access AMD Accelerated Cloud resources.
-### How to Login to Web Interface
+Contact your AMD Sponsor to sign up for access to AMD Accelerator Cloud resources.
+### How to Login to the Web Interface Login
 Go to https://aac.amd.com
-### How to SSH to AAC Plano Slurm Cluster
+### How to SSH to the Plano Slurm Cluster
 1. From the laptop or system used to generate SSH keys for AAC User Account Registration, enter the following at the Terminal or PowerShell prompt to SSH to the AAC Plano Slurm cluster:
    ```
    ssh <your_userid>@aac1.amd.com
@@ -21,7 +21,7 @@ For questions or support requests, please email them to dl.dcgpu.aac.service-req
 ### The AAC Web Interface has moved to https://aac.amd.com 
 
 ### 1. How to Fix `ssh <USERID>@aac1.amd.com` failed with `Host key verification failed` message
-Because the Slurm login node has changed from `dell-r08-01`, the host key fingerprint has changed. SSH users may see a failure to login with the a *WARNING* message such as one shown below. Please update `$HOME/.ssh/known_hosts` by *removing* the existing entries for `dell-r08-01` and retry to `SSH` to `aac1.amd.com` AAC Plano Slurm cluster login node and accept the new fingerprints:
+The Slurm login node was changed during maintenance, so the host key fingerprint is different. SSH users may see a failure to login with a *WARNING* message such as one shown below. Please update `$HOME/.ssh/known_hosts` by *removing* the existing entries for `dell-r08-01` and retry `ssh <USERID>@aac1.amd.com`  and accept the new fingerprints:
 ```
 ECDSA key fingerprint is SHA256:u1u0/uh0GLcs19KNHrmZIA6EDLMvJACK5y2fMkVg1fg.
 ECDSA key fingerprint is MD5:76:6a:a4:34:56:c0:04:fa:7f:84:e6:85:0b:f1:65:e5.
@@ -29,7 +29,7 @@ ECDSA key fingerprint is MD5:76:6a:a4:34:56:c0:04:fa:7f:84:e6:85:0b:f1:65:e5.
 #### Solution: 
 1. First remove existing fingerprint of old Slurm login host: `ssh-keygen -R aac1.amd.com`
 2. Login to the AAC Plano Slurm cluster: `ssh <USERID>@aac1.amd.com`
-   Enter "yes" to accept new host key fingerprint at the prompt to continue to login. 
+3. Enter "yes" to accept new host key fingerprint at the prompt to continue to login. 
 
 ### 2. How to Fix `The selected queue is no longer available` error
 ![lhkcojnlehhnkkck](https://github.com/amddcgpuce/AMDAcceleratedCloudGuides/assets/79542249/78c41680-49eb-4d59-bead-00d2b0a5f30e)
