@@ -67,7 +67,7 @@ scontrol show job 21851
 # How to Allocate and SSH to a Compute Node
 Use salloc to allocate a whole node from the assigned partition/queue and SSH to the allocated node.
 ```
-salloc --exclusive --mem=0 --gres=gpu:8 –p <QUEUE_NAME>
+salloc --exclusive --mem=0 --gres=gpu:8 -p <QUEUE_NAME>
 ```
 Where <QUEUE_NAME> is the name of Slurm queue/partition name accessible to you 
 ### How to create additional SSH sessions to the Allocated Compute Node (previously using `salloc` command)
