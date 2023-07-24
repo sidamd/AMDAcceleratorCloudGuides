@@ -11,7 +11,7 @@
 
 3. Select the desired Gromacs version with desired container type as **singularity**.
 
-   **Note**: In this case, we have selected Gromacs 2022_3 version and container as singularity.
+   **Note**: In this case, Gromacs 2022_3 version was seletced with container type as singularity.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/b77f64a1-6641-4a10-9829-090d223f1602)
 
 4. Click on **'New Workload'** button available on the top right corner.
