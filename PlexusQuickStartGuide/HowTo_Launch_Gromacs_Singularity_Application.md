@@ -66,17 +66,38 @@
 
 10. After submitting a workload, user can monitor how the workload is performing by checking the Workload Status 
     on the Workloads page and the Workload Information page:
+    
     Each workload goes through several different states after it is submitted -
+
     **Created** – The workload has been created in the system.
+
     **Sent** – The workload has been sent to the queue that you selected in the workload submission process.
+
     **Pending** – The workload is in a waiting state in the queue.
+
     **Running** – The workload has started running in the selected queue.
+
     **Completed** – The workload has successfully finished processing.
+
     **Failed** – A problem has occurred which has prevented the workload from completing successfully.
+
     **Cancelled** – The workload has been canceled by the user and stopped running.
 
 11.  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
      **STDOUT** and **STDERR** logs by clicking on respective tabs. The Performace tab shows the telemetry collected.
+
+     View Log Click on the links shown on the Workload Information screen to view the job log, stdout log and stderr log:
+
+     **View SysLog** - Information about the workload throughout the entire process
+
+     **View Stdout** - Standard output that presents the output of a workload and sometimes includes the results of the 
+     workload.
+
+     **View Stderr** - Standard Error that helps you understand why you may have encountered certain issues during the 
+     process.
+
+     **Download log files** - Download all information about the Log, STDOUT and STDERR log files.
+
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/1b4744ae-ef6d-4e88-9876-a84c7e3fb315)
 
 12.  The performace value in the **STDERR** tab is the performance of Gromacs singularity application.
