@@ -1,6 +1,6 @@
 ***
 
-# How To Launch RocHPL Singularity Application
+# How To Launch RocHPCG Singularity Application
 
 ***
 
@@ -65,7 +65,7 @@ mpirun --mca pml ucx -np 8 hpcg 280 280 280 1860
 
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/b1728f29-e1d8-475d-a648-aed01426abfd)
 
- **11. The final score in the STDOUT tab is the performance of RocHPL application.**
+ **11. The final score in the STDOUT tab is the performance of RocHPCG application.**
 
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/db340851-8c92-4e39-93b1-9aa36b4d8a85)
 
