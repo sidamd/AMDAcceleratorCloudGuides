@@ -1,6 +1,6 @@
 ***
 
-# How To Launch RocHPL Docker Application
+# How To Launch RocHPCG Docker Application
 
 ***
 
