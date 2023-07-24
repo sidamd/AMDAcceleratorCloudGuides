@@ -4,15 +4,15 @@
 
 ***
 1. Login to **https://aac.amd.com/**.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/5ff0f361-8d9b-42ae-afc8-9c222b56bc63)
+  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
 2. Click on Applications. Search for **Gromacs**.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/4e804fad-bd92-4fea-a186-a54cc9b8c1fd)
+  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/da7077e0-1488-4495-808d-9d6655f668c4)
 
 3. Select the desired Gromacs version with desired container type as **singularity**.
 
    **Note**: In this case, Gromacs 2022_3 version was seletced with container type as singularity.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/b77f64a1-6641-4a10-9829-090d223f1602)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/17a60c0f-7836-489c-8ba9-107f82479d8e)
 
 4. Click on **'New Workload'** button available on the top right corner.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/84d85f53-80d7-48c6-a9ad-3743cbbf8ac8)
@@ -27,18 +27,22 @@
 
    Benchmark type 1 : **Adh_Dodec**
 
-   Here nstlist=180; ntomp=16; cd /benchmarks/adh_dodec; tar -xvf adh_dodec.tar.gz; was uncommented.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ba3d4919-7df5-48d9-b716-b321ee8c8acf)
+   Uncomment the Adh_Dodec benchmark command from the run script to execute the Adh_Dodec benchmark.
+   nstlist=180; ntomp=16; cd /benchmarks/adh_dodec; tar -xvf adh_dodec.tar.gz
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/d7d5b24b-528a-4f19-85a1-513dfba6da33)
 
    Benchmark type 2 : **Cellulose**
+   
+   Uncomment the Cellulose benchmark command from the run script to execute the Cellulose benchmark.
+   nstlist=320; ntomp=16; cd /benchmarks/cellulose_nve; tar -xvf cellulose_nve.tar.gz
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/0cce3cf4-3ac3-4b3e-a824-e16cda772fc1)
 
-   Here nstlist=320; ntomp=16; cd /benchmarks/cellulose_nve; tar -xvf cellulose_nve.tar.gz; was uncommented.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/86825b7e-8f8a-43e3-b5a5-58c315062bb8)
-
+   
    Benchmark type 3 : **STMV**
 
+   Uncomment the STMV benchmark command from the run script to execute the STMV benchmark.
    Here nstlist=400; ntomp=8; cd /benchmarks/stmv; tar -xvf stmv.tar.gz; was uncommented.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/27378131-740c-4351-97d7-d39e31deddcd)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ce295445-de0b-49fd-a229-47f405e19262)
    
 7. Here the run time is selected as **'1 hour'** with telemetry enabled. The number of **GPU's** are selected as **'8'**.
 
@@ -50,7 +54,8 @@
    selected. Click on **'Next'** button available on the top right corner.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2c5d4b9d-d0b2-456b-b4f1-93c88f2d9dc0)
 
-9. Review all the configurations selected and click on **'Run Workload'**.
+9. Review Workload Submission. Review the information that has entered for this workload. If any change is needed, it can 
+   be changed by clicking in the appropriate sections to make revisions.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/a81f1d26-ae41-4adb-9d31-d46ced6f228e)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/9a8df735-bb44-4a21-8566-57e60f63b6dc)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/f0d32676-61cd-49a1-8dca-743e08af14ed)
@@ -59,9 +64,20 @@
    **Note**: Please note that the payment information might be different from the above image because you might be added 
    to a different team.
 
-10.  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
-     **STDOUT** and **STDERR** logs by clicking on respective tabs. The Performace tab shows the telemetry collected.
-     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/6c267b20-dd8c-4e05-831d-dabdc1b729e4)
+10. After submitting a workload, user can monitor how the workload is performing by checking the Workload Status 
+    on the Workloads page and the Workload Information page:
+    Each workload goes through several different states after it is submitted -
+    **Created** – The workload has been created in the system.
+    **Sent** – The workload has been sent to the queue that you selected in the workload submission process.
+    **Pending** – The workload is in a waiting state in the queue.
+    **Running** – The workload has started running in the selected queue.
+    **Completed** – The workload has successfully finished processing.
+    **Failed** – A problem has occurred which has prevented the workload from completing successfully.
+    **Cancelled** – The workload has been canceled by the user and stopped running.
 
-11.  The performace value in the **STDERR** tab is the performance of Gromacs singularity application.
-      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/4c73c929-8f36-4d10-8df4-9f696c2d4e88)
+11.  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
+     **STDOUT** and **STDERR** logs by clicking on respective tabs. The Performace tab shows the telemetry collected.
+    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/1b4744ae-ef6d-4e88-9876-a84c7e3fb315)
+
+12.  The performace value in the **STDERR** tab is the performance of Gromacs singularity application.
+     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/44421288-3098-4071-84bb-d5495da7dbc9)
