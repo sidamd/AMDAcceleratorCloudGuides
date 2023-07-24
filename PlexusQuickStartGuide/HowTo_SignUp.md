@@ -20,7 +20,7 @@
 
 **5. In order to access your account, You have to activate your account. You will be recieving a mail with a link for activation. You need to click on "Activate AMD Cloud Platform| AMD account" button.**
 
-![aac_account_activate](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/13dcf83a-dc55-4af7-9724-f0fad7759eea)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/a764e1c6-cf72-4bdd-a05f-c08f9787c7d3)
 
 **6. After activation you can now signin with the email and password created on https://aac.amd.com**
 
