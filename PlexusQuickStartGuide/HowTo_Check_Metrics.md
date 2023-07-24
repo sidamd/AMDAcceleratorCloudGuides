@@ -4,18 +4,18 @@
 
 ***
 1. Login to **https://aac.amd.com/**.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/5ff0f361-8d9b-42ae-afc8-9c222b56bc63)
-
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
+   
 2. Search for the required application, here HPL was selected.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/a5eae211-1485-42d9-9ba4-482df8be3507)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/c38b250f-24bd-4a15-8f65-2cca6aeb5bc9)
 
 3. Select the desired RocHPL version with desired container type as **docker**.
    **Note**: In this case, RocHPL_5_0_5_49 version was selected with container type as docker.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/9a98f484-a484-468b-835f-5924a00adad3)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/060103a0-9be8-4569-9b2c-c60fae091fb5)
 
 4. Click on **'New Workload'** button available on the top right corner.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/420ca519-5749-4cf0-a80f-28b955c12ced)
-
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ace07a67-c914-41a7-b69e-b7aa83eee7a8)
+   
 5. Click **'Next'** button available on the top right corner.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/b090385d-1af1-4790-a1f3-19a34512f29a)
 
@@ -30,7 +30,8 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/fa82475d-8460-43d3-aa9a-8abfe786e4e0)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/959d6b49-dfc3-41eb-96d8-f39846ae32f0)
 
-8. Select the cluster and desired queue to run the job. **In this case 1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible)** was selected. Click on 'Next' button available on the top right corner.
+8. Select the cluster and desired queue to run the job. **In this case 1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible)** was 
+   selected. Click on 'Next' button available on the top right corner.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/63f7f363-2436-4e68-9ddd-4e60f7e8568d)
 
 9. Review all the configurations selected and click on **'Run Workload'**.
