@@ -22,8 +22,8 @@
 
 6. Choose the desired **benchmark** type
 
-   **Note**: Uncomment the type of benchmark that needs to be run. Only "ONE" benchmark can be launched at a time. If more 
-   than one benchmark, say Adh_Dodec and Cellulose, is uncommented and launched, then the application fails.
+   **Note**: Uncomment the type of benchmark that needs to be run. Only **"ONE"** benchmark can be launched at a time. If 
+   more than one benchmark, say Adh_Dodec and Cellulose, is uncommented and launched, then the application fails.
 
    Benchmark type 1 : **Adh_Dodec**
 
