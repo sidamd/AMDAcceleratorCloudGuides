@@ -57,7 +57,7 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2b6e04b2-3328-4d00-8848-8f19ff1be57a)
 
 9. Review Workload Submission. Review the information that has entered for this workload. If any change is needed, it can 
-   be changed by clicking in the appropriate sections to make revisions.
+   be changed by clicking in the appropriate sections to make revisions.Click on **'Run Workload**.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/3950c8d3-6ff4-41a0-863c-066d2f5c8d01)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ecab61af-b816-4ed4-8d2b-74dcd43d8635)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8171a7ac-8bd0-46d7-9296-65802d410f55)
@@ -90,6 +90,6 @@
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/f35223f7-2789-4de0-a64a-728d3527037b)
 
 
-13.  The performace value in the **STDERR** tab is the performance of Gromacs docker application.
+12.  The performace value in the **STDERR** tab is the performance of Gromacs docker application.
      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8705664b-491c-475c-be86-5e5ea96662e5)
 
