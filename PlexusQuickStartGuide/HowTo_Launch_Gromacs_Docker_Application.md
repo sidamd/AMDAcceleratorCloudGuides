@@ -12,13 +12,13 @@
 3. Select the desired Gromacs version with desired container type as **docker**.
 
    **Note**: In this case, Gromacs 2022_3 version was selected with container type as docker.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/6023ef04-29df-463d-b244-5e41a5d4dd74)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/38eb9c67-348c-4e8a-9b44-ae769d01d52c)
 
 4. Click on **'New Workload'** button available on the top right corner.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/626a0b85-b92d-4215-affe-ae3e4c9c194c)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/849b86b9-f774-4da9-a13e-850d56cb1a66)
 
 5. Click **'Next'** button available on the top right corner.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/5d461b07-04ed-485e-ae97-aebb5c7a6e64)
+  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/b6df3888-dd95-4fac-a481-850c0c224fe4)
 
 6. Choose the desired **benchmark** type
 
@@ -48,21 +48,21 @@
 7. Here the run time is selected as **'1 hour'** with telemetry enabled. The number of **GPU's** are selected as **'8'**.
 
     Click on **'Next'** button available on the top right corner.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/bcd11877-7409-40f9-84f6-18e937eae28b)
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ef020fb3-c314-40ee-8bfe-3497e6df4afc)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/287248f5-0fb3-42d1-a1e0-9c97c3e660ed)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/d35a9410-4113-454c-bd6c-3d0359a0b361)
 
 8. Select the cluster and queue that are assigned to the team and are available to run the job.
    In this case **1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible)** was selected. Click on **'Next'** button available on the 
    top right corner.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2b6e04b2-3328-4d00-8848-8f19ff1be57a)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/83320bca-3143-4653-8f5e-8a4e88a8ebde)
 
 9. Review Workload Submission. Review the information that has entered for this workload. If any change is needed, it can 
    be changed by clicking in the appropriate sections to make revisions.Click on **'Run Workload**.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/3950c8d3-6ff4-41a0-863c-066d2f5c8d01)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/20364337-3cd8-4c5e-9221-6893cd29c4cd)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ecab61af-b816-4ed4-8d2b-74dcd43d8635)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8171a7ac-8bd0-46d7-9296-65802d410f55)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/c084e5b0-bc25-482c-87b3-09eea4eeb451)
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ff8bb2db-4b5f-4f7f-87dc-cb58aa2755be)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/78e2520d-9cda-492e-b41f-30c4b39d446e)
 
     **Note**: Please note that the payment information might be different from the above image because you might be added 
    to a different team.
