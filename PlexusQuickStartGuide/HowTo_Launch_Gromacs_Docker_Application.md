@@ -11,7 +11,7 @@
 
 3. Select the desired Gromacs version with desired container type as **docker**.
 
-   **Note**: In this case, we have selected Gromacs 2022_3 version and container as docker.
+   **Note**: In this case, Gromacs 2022_3 version was selected with container type as docker.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/a5a1e84e-399e-4a55-83ed-891f642a9782)
 
 4. Click on **'New Workload'** button available on the top right corner.
