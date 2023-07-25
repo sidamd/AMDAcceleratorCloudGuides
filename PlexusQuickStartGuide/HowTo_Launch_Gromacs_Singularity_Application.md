@@ -7,7 +7,7 @@
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
 2. Click on Applications. Search for **Gromacs**.
-  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/da7077e0-1488-4495-808d-9d6655f668c4)
+  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/604d39d8-e532-4ba6-8710-fde299532a09)
 
 3. Select the desired Gromacs version with desired container type as **singularity**.
 
