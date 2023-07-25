@@ -29,4 +29,4 @@
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/2ba807f7-cc1a-4edc-9c7d-6175e8d6af20)
 
 6. The same aplication was re-ran after **disabling** the **telemetry**. Here the performace tab is not visible.
-    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/713ecad9-6796-40db-97be-72ef225a711b)
+    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ec902272-6942-4832-83f7-472c7441c317)
