@@ -10,13 +10,13 @@
 
 
  **2. Select the desired Application.**
-  **Note**: Here, we have selected Application as HPCG.
+  **Note**: In this case, we have selected Application as HPCG.
  
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
 
-  **3. Select the desired RocHPCG version with desired container type as docker/singularity.**
+  **3. Select the desired version with container type as docker/singularity.**
     
-   **Note**: Here, we have selected rocHPCG 3.1.0_97 version and container as docker.
+   **Note**: In this case, we have selected rocHPCG 3.1.0_97 version and container as docker.
 
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/7c489772-18f4-464c-a0be-6b3048c59be1)
 
@@ -57,7 +57,7 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/de586d6f-87ad-4e9d-8c4e-b6ebd9a3e49c)
 
 
- **10. Once the application execution is successful then the status gets changed into 'Completed'**
+ **10. Once the application execution is successful then the status gets changed to 'Completed'**
      
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/4f113aa6-f7ba-4c26-b62e-c3c22df8b552)
    
