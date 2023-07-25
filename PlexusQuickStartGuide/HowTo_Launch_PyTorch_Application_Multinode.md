@@ -18,13 +18,14 @@
 
  **3. In the 'Select An Application' pop-up, select the PyTorch multinode version. The container type is singularity**
     
-   **Note**: In this case, we have selected **PyTorch 1-12-1 ROCm5-4 Python 3-8 Multinode** version and container as docker.
+   **Note**: In this case, we have selected **PyTorch 1-12-1 ROCm5-4 Python 3-8 Multinode** version and container is singularity.
    
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ecad6bcf-41b7-496e-9fb4-0838b213beeb) 
 
  **4. Click on 'New Workload' button available on the top right corner.**
 
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/49eb1722-d350-429a-8dae-247b9bdbb25d)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/b55e0f25-3820-4d59-8aa4-4822df8d7d0b)
+
 
  **5. Click 'Next' button to continue.**
 
