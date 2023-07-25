@@ -37,7 +37,7 @@ cd $HOME/rccl-tests/build
 ```
 Run all_reduce_perf on 8 GPUs/GCDs
 ```
-mpirun -np 1 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/all_reduce_perf -b 8 -e 16G -f 2 -g 8 -c 0
+mpirun -np 8 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/all_reduce_perf -b 8 -e 16G -f 2 -g 1 -c 0
 ```
 
 # Multinode Multi GPU/GCD RCCL Tests Example 
@@ -64,5 +64,5 @@ ubb-r09-12
 ```
 Run all_reduce_perf on 8 GPUs/GCDs on each node of the 2-node cluster. Use `-H` option to specify the `$SLURM_NODELIST`
 ```
-mpirun -np 2 -H ubb-r09-11,ubb-r09-12 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/all_reduce_perf -b 8 -e 16G -f 2 -g 8 -c 0
+mpirun -np 16 -H ubb-r09-11:8,ubb-r09-12:8 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/all_reduce_perf -b 8 -e 16G -f 2 -g 1 -c 0
 ```
