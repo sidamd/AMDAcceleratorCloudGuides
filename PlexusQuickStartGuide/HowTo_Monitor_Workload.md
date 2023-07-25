@@ -28,7 +28,7 @@ Workload Overview page has the following tabs.
      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/3fed5764-adb1-41c7-8cd3-b3c6487ff77c)
      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/842e4eea-3666-4d56-b516-328a964bd559)
    * Once the workload completes, Overview tab will be disabled.
-   * 
+    
 2. **Parameters tab**
    * This tab has the details entered while submitting the workload like application launched, queue selected, app configuration, number of GPUs, CPUs, memory etc.
      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/da856773-47c6-4af2-afb2-bbde93e54c37)
@@ -43,26 +43,15 @@ Workload Overview page has the following tabs.
       
 4. **STDOUT tab**
     * The output logs can be seen in STDOUT tab while workload is running.
-    * Once workload finishes, stdout can be downloaded by clicking 'Download logs' button.
+    * Once workload finishes, stdout log can be downloaded by clicking 'Download logs' button.
       ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/66b13e07-108f-4c3c-83ed-49bd815e9167)
       
 5. **STDERR tab**
-    * The output logs can be seen in STDERR tab while workload is running.
-    * Once workload finishes, stderr can be downloaded by clicking 'Download logs' button.
+    * The error logs can be seen in STDERR tab while workload is running.
+    * Once workload finishes, stderr log can be downloaded by clicking 'Download logs' button.
       ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/4306f322-31ca-42a3-800d-c06ca60f453a)
       
 6. **Performance tab**
     * Performance tab shows the telemetry
-      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/fd79fae3-3269-4a38-90c0-b91fd35c135f)
+      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/9a145a6d-ae41-41a6-98aa-40d3b7e0d785)
       ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/0e41cd29-a453-4021-9a0d-357b914c7a46)
-
-
-
-
-
-
-
-
-
-
-  
