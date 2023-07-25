@@ -37,7 +37,7 @@
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/793c2faf-9bcf-4502-a138-3e6281947300)
 
 
-  **8. Select the cluster and desired queue to run the job. In this case **1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible) - AAC Plano ** is selected. Click on Next.**
+  **8. Select the cluster and desired queue to run the job. In this case **1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible) - AAC Plano**  is selected. Click on Next.**
 
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/96d3855e-1640-4820-b1f7-7dc5ea0dd9e8)
 
