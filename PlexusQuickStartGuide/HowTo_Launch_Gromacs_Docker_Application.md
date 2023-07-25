@@ -7,7 +7,7 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
 2. Click on Applications. Search for **Gromacs**.
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/da7077e0-1488-4495-808d-9d6655f668c4)
+   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/49596b39-38af-4463-91c4-19baacebe5c4)
 
 3. Select the desired Gromacs version with desired container type as **docker**.
 
@@ -86,7 +86,7 @@
 
     **Cancelled** – The workload has been canceled by the user and stopped running.
 
-12.  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
+11.  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
      **STDOUT** and **STDERR** logs by clicking on respective tabs. The Performace tab shows the telemetry collected.
 
      View Log Click on the links shown on the Workload Information screen to view the job log, stdout log and stderr log:
@@ -103,6 +103,6 @@
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/f35223f7-2789-4de0-a64a-728d3527037b)
 
 
-13.  The performace value in the **STDERR** tab is the performance of Gromacs docker application.
+12.  The performance value in the **STDERR** tab is the performance of Gromacs docker application.
      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/8705664b-491c-475c-be86-5e5ea96662e5)
 
