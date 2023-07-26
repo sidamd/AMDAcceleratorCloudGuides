@@ -72,3 +72,7 @@ Run alltoall_perf on 8 GPUs/GCDs on each node of the 2-node cluster. Use `-H` op
 ```
 mpirun -np 16 -H ubb-r09-12:8,ubb-r09-13:8 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/alltoall_perf -b 8 -e 16G -f 2 -g 1 -c 0
 ```
+Run alltoall_perf on 32 GPUs/GCDs on each node of the 8-node cluster. 
+```
+mpirun -np 64 -H ubb-r09-09:8,ubb-r09-10:8,ubb-r09-11:8,ubb-r09-12:8,ubb-r09-13:8,ubb-r09-14:8,ubb-r09-15:8,ubb-r09-17:8 --mca coll_hcoll_enable 0 --mca btl ^self,vader,openib -x NCCL_IB_PCI_RELAXED_ORDERING=1 -x NCCL_NET_GDR_LEVEL=3 -x UCX_IB_PCI_RELAXED_ORDERING=on -x UCX_TLS=self,sm,rc_x -x NCCL_IB_HCA=mlx5_0:1,mlx5_2:1,mlx5_4:1,mlx5_6:1  $HOME/rccl-tests/build/alltoall_perf -b 8 -e 16G -f 2 -g 1 -c 0
+```
