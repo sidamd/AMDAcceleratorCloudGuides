@@ -4,11 +4,11 @@
 
 ***
 
- 1. Login to **https://aac.amd.com/.**
+ **1.** Login to **https://aac.amd.com/.**
  
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
- 2. Click on Applications. Select **TensorFlow**
+ **2.** Click on Applications. Select **TensorFlow**
  
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/9c48d338-041a-46dc-8b49-f5bcd21629b1)
  
