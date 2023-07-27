@@ -45,9 +45,8 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ce295445-de0b-49fd-a229-47f405e19262)
 
 
-**7.** Here the run time is selected as **'1 hour'** with telemetry enabled. The number of **GPU's** are selected as **'8'**.
-
-    Click on **'Next'** button available on the top right corner.
+**7.** In the following image,  the maximum run time is selected as **'1 hour'** with telemetry enabled. The number of **GPU's** are selected as **'8'**.
+Click on **'Next'** button available on the top right corner.
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/287248f5-0fb3-42d1-a1e0-9c97c3e660ed)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/d35a9410-4113-454c-bd6c-3d0359a0b361)
 
@@ -66,42 +65,40 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/ad967d89-b71f-4e43-9c5a-4dee6bab19cf)
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/14d0e9dd-c2e0-4b31-b635-c93eccd343cd)
 
-    **Note**: Please note that the payment information might be different from the above image because you might be added 
+  **Note**: Please note that the payment information might be different from the above image because you might be added 
    to a different team.
 
 **10.** After submitting a workload, user can monitor how the workload is performing by checking the Workload Status 
-    on the Workloads page and the Workload Information page:
+    on the Workloads page and the Workload Information page.
+   Each workload goes through several different states after it is submitted -
 
-    Each workload goes through several different states after it is submitted -
+  **Created** – The workload has been created in the system.
 
-    **Created** – The workload has been created in the system.
+  **Sent** – The workload has been sent to the queue that you selected in the workload submission process.
 
-    **Sent** – The workload has been sent to the queue that you selected in the workload submission process.
+  **Pending** – The workload is in a waiting state in the queue.
 
-    **Pending** – The workload is in a waiting state in the queue.
+  **Running** – The workload has started running in the selected queue.
 
-    **Running** – The workload has started running in the selected queue.
+  **Completed** – The workload has successfully finished processing.
 
-    **Completed** – The workload has successfully finished processing.
+  **Failed** – A problem has occurred which has prevented the workload from completing successfully.
 
-    **Failed** – A problem has occurred which has prevented the workload from completing successfully.
-
-    **Cancelled** – The workload has been canceled by the user and stopped running.
+  **Cancelled** – The workload has been canceled by the user and stopped running.
 
 **11.**  Once the application execution is successful then the status gets changed into **“Completed”**. The user can check the 
      **STDOUT** and **STDERR** logs by clicking on respective tabs. The Performace tab shows the telemetry collected.
+  View Log Click on the links shown on the Workload Information screen to view the job log, stdout log and stderr log:
 
-     View Log Click on the links shown on the Workload Information screen to view the job log, stdout log and stderr log:
+  **View SysLog** - Information about the workload throughout the entire process
 
-     **View SysLog** - Information about the workload throughout the entire process
-
-     **View Stdout** - Standard output that presents the output of a workload and sometimes includes the results of the 
+  **View Stdout** - Standard output that presents the output of a workload and sometimes includes the results of the 
      workload.
 
-     **View Stderr** - Standard Error that helps you understand why you may have encountered certain issues during the 
+  **View Stderr** - Standard Error that helps you understand why you may have encountered certain issues during the 
      process.
 
-     **Download log files** - Download all information about the Log, STDOUT and STDERR log files.
+  **Download log files** - Download all information about the Log, STDOUT and STDERR log files.
     ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/f35223f7-2789-4de0-a64a-728d3527037b)
 
 
