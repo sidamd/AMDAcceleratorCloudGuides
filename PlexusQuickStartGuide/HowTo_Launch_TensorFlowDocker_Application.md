@@ -4,11 +4,11 @@
 
 ***
 
- **1.** Login to **https://aac.amd.com/.**
+ 1. Login to **https://aac.amd.com/.**
  
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
- **2.** Click on Applications. Select **TensorFlow**
+ 2. Click on Applications. Select **TensorFlow**
  
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/9c48d338-041a-46dc-8b49-f5bcd21629b1)
  
@@ -30,7 +30,7 @@
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475255/84db90fe-9aac-43b8-85a3-4fb5961772df)
 
   
-  6. In **Select Resources** page, specify the number of GPU's (e.g., 1 GPU) and max allowed runtime required for the workload. Click **Next** button.
+ 6. In **Select Resources** page, specify the number of GPU's (e.g., 1 GPU) and max allowed runtime required for the workload. Click **Next** button.
 
   **Note:** The maximum number of GPUs should be 8.
 
