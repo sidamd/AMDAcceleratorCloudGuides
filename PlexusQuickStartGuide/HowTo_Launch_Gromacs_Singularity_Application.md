@@ -52,6 +52,7 @@
 
 8. Select the cluster and desired queue to run the job. In this case **1CN128C8G2H_2IB_MI210_RHEL8 (Pre-emptible)** was 
    selected. Click on **'Next'** button available on the top right corner.
+   The availables queues are **AAC Plano**, **AAC Plano RHEL** and **CirraScale.**
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/633f304b-e706-4c0f-87fb-1ef28850f621)
 
 9. Review Workload Submission. Review the information that has entered for this workload. If any change is needed, it can 
