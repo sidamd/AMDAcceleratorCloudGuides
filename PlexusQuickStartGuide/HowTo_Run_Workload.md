@@ -10,6 +10,7 @@
 
 
 2. Select the desired **Application**
+   
   **Note**: In this case, we have selected Application as HPCG.
  
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
