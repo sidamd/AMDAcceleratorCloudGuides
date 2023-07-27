@@ -54,6 +54,7 @@
 8. Select the cluster and queue that are assigned to the team and are available to run the job.
    In this case **1CN128C8G2H_2IB_MI210_SLES15 (Pre-emptible)** was selected. Click on **'Next'** button available on the 
    top right corner.
+   The availables cluters are **AAC Plano**, **AAC Plano RHEL** and **CirraScale.**
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475004/83320bca-3143-4653-8f5e-8a4e88a8ebde)
 
 9. Review Workload Submission. Review the information that has entered for this workload. If any change is needed, it can 
