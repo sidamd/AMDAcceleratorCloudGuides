@@ -96,7 +96,7 @@ $ scl enable gcc-toolset-11 bash
 ## How to Use Podman to run Docker Containers
 To start `amddcgpuce/rocm:5.6.0-ub22` docker in interactive mode using `podman` with `$HOME` mounted as `/workdir` inside docker container
 ```
-podman run -it --privileged -v $HOME:/workdir -v /shareddata:/shareddata -v /shared:/shared --workdir /workdir docker://amddcgpuce/rocm:5.6.0-ub22 bash
+podman run -it --privileged --network=host --ipc=host -v $HOME:/workdir -v /shareddata:/shareddata -v /shared:/shared --workdir /workdir docker://amddcgpuce/rocm:5.6.0-ub22 bash
 ```
 This will pull the docker image, start an interactive session with current work directory set to /workdir and start a bash shell.
 
