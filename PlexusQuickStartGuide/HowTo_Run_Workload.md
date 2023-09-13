@@ -4,16 +4,37 @@
 
 ***
 
- 1. Login to **https://aac.amd.com/**.
+Login to **https://aac.amd.com/**.
     
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/d62dc96e-e37a-42b3-9b0e-72445014a621)
 
+A workload can be launched by following the below 6 steps.
 
-2. Select the desired **Application**
+### 1. **Select the desired Application**.
+
+&emsp; a. Navigate to **Applications** page. Select desired application for which workload has to be run.
    
-  **Note**: In this case, we have selected Application as HPCG.
+&emsp; **Note**: In this case, we have selected Application as **HPCG**.
  
-![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
+&emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
+
+&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**(or)**
+
+&emsp; a. Navigate to **Workloads** Page. Click **New Workload** button
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/c926eef4-9f2c-4770-867c-90fb7ad8ddbd" width="900">
+
+&emsp; b. Select desired application for which workload has to be run. Click **Next**
+
+&emsp; **Note**: In this case, we have selected Application as **HPCG**.
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/e5c46573-60d5-44e2-8dd0-d2b6159a2392" width="900">
+
+&emsp; c. Select desired version if prompted. It can be either docker or singularity.
+
+&emsp; **Note**: In this case, we have selected rocHPCG 3.1.0_97 version and container as **docker**.
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/155f9626-5707-475e-bc7c-60f573b62264" width="900">
 
 3. Select the desired version with container type as **docker/singularity**
     
