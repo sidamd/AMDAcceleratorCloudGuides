@@ -10,7 +10,9 @@ Login to **https://aac.amd.com/**.
 
 A workload can be launched by following the below 6 steps.
 
-### 1. **Select the desired Application**.
+## 1. **Select the desired Application**.
+
+The application for which the workload has to be run can be selected in this step. It can be done in two ways as mentioned below.
 
 &emsp; a. Navigate to **Applications** page. Select desired application for which workload has to be run.
    
@@ -18,40 +20,57 @@ A workload can be launched by following the below 6 steps.
  
 &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/5d521fdb-046e-4963-9068-db42f71a59c9)
 
-&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;**(or)**
+&emsp; c. Select desired version if prompted. It can be either docker or singularity.
+
+&emsp; **Note**: In this case, we have selected rocHPCG 3.1.0_97 version and container as **docker**.
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ee067057-d622-4418-a6ac-1faa977f61c0" width="900">
+
+&emsp; d. Click on **New workload** button
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/39adef02-85a7-47bf-aee6-41fee259cc0d" width="900">
+
+
+### &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;**(or)**
+
 
 &emsp; a. Navigate to **Workloads** Page. Click **New Workload** button
 
 &emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/c926eef4-9f2c-4770-867c-90fb7ad8ddbd" width="900">
 
-&emsp; b. Select desired application for which workload has to be run. Click **Next**
+&emsp; b. Select desired application for which workload has to be run.
 
 &emsp; **Note**: In this case, we have selected Application as **HPCG**.
 
-&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/e5c46573-60d5-44e2-8dd0-d2b6159a2392" width="900">
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ae1c9519-6a84-4d90-88bc-057b7dd69924" width="900">
 
 &emsp; c. Select desired version if prompted. It can be either docker or singularity.
 
 &emsp; **Note**: In this case, we have selected rocHPCG 3.1.0_97 version and container as **docker**.
 
-&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/155f9626-5707-475e-bc7c-60f573b62264" width="900">
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ee067057-d622-4418-a6ac-1faa977f61c0" width="900">
 
-3. Select the desired version with container type as **docker/singularity**
-    
-   **Note**: In this case, we have selected rocHPCG 3.1.0_97 version and container as docker.
+&emsp; d. Click **Next** button.
 
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/7c489772-18f4-464c-a0be-6b3048c59be1)
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/b5f29f92-4981-42b6-b060-69774211f756" width="900">
 
+## Select Input Files
 
-4. Click on **'New Workload'** button available on the top right corner.
-    
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/e4814a18-fa65-4ab8-83c4-a7d20a0e4ba3)
+The files required for the workload can be uploaded in this step.
 
+&emsp; a. Click **Upload files**.
 
- 5. Click **Next** to continue.
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/82bb7a15-2a04-4685-a4c6-94eeeba38553" width="900">
 
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/e420e08e-5b7b-4a48-819d-fea3d1f8dc7b)
-   
+&emsp; b. Click **Browse Files**
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/1eb244df-3cd0-465a-b67e-1633a1387ba7" width="900">
+
+&emsp; c. Maximum of 5 files can be uploaded at one time. 
+
+&emsp; d. Select the required files. Click **Next**.
+
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/e420e08e-5b7b-4a48-819d-fea3d1f8dc7b" width="900">
 
  6. Click **Next** to continue with default script.
  
