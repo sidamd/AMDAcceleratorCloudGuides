@@ -70,7 +70,42 @@ The files required for the workload can be uploaded in this step.
 
 &emsp; d. Select the required files. Click **Next**.
 
-&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/e420e08e-5b7b-4a48-819d-fea3d1f8dc7b" width="900">
+&emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/2b3c9085-2752-4cac-b2ed-6496a21d6ae8" width="900">
+
+## Application Configuration
+
+User can either continue with default script or enter custom commands into the following script fields. 
+
+**Note:** Application configuration step will not be available for applications like pyTorch, tensorflow, Jammy etc.
+
+&emsp; a. **Pre-run Script**
+
+&emsp; &emsp; In this step, commands which are required to be executed before creating containers can be added into **Pre-run Script** field.
+
+&emsp; a. **Run Script**
+
+&emsp; &emsp; In this step, commands which are required to be executed in the container created can be added into **Run Script** field. Benchmarking script for 8 GPUs will be available by default for the selected application in this field. AMD Infinity hub can be referred for more benchmarking commands
+
+&emsp; a. **Post-run Script**
+
+&emsp; &emsp; In this step, commands which are required to be executed after creating containers can be added into **Post-run Script** field.
+
+## Select Resources
+
+Required inputs for workload like number of GPUs, maximum allowed run time, etc can be entered in this step.
+
+&emsp; a. **Queue oversubscribe**
+
+&emsp; b. **Telemetry enabled:**
+
+&emsp; &emsp; If telemetry is enabled, once workload is completed, performance tab will be shown. If disabled, performance tab will not be shown on opening completed/finished workload.
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/bea5e17f-8999-43fa-bd02-a93ce1a2ca6a)
+
+&emsp; c. **Maximun allowed run time**
+
+&emsp; &emsp; The time for which workload is allowed to run should be specified in the max allowed run time field.
+
 
  6. Click **Next** to continue with default script.
  
