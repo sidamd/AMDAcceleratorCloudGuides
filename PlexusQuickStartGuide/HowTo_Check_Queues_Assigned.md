@@ -13,3 +13,5 @@
 3. The list of queues which are assigned to the logged in user will be displayed as shown in the following image.
 
       ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/56cb63bf-5f63-4827-99d0-11e6311f8827)
+
+**Note:** If queues are not visible, contact your sponsor for assigning queues to you.
