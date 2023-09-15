@@ -26,3 +26,5 @@
 
 
    ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/e940f30d-e184-4e40-8a3d-d8b4dd291a0f)
+
+**Note:** If team is not assigned, please contact your sponsor for adding Team
