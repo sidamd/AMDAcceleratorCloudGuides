@@ -102,38 +102,79 @@ Required inputs for workload like number of GPUs, maximum allowed run time, etc 
 
 &emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/bea5e17f-8999-43fa-bd02-a93ce1a2ca6a)
 
-&emsp; c. **Maximun allowed run time**
+&emsp; c. **Maximum allowed runtime**
 
-&emsp; &emsp; The time for which workload is allowed to run should be specified in the max allowed run time field.
+&emsp; &emsp; The time for which workload is allowed to run should be specified in the **maximum allowed runtime** field. By default 1 hour will be selected.
+
+&emsp; &emsp; If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed **maximum allowed runtime**.
+
+&emsp; &emsp; Based on the time required for workload, user should change the **maximum allowed runtime**.
+
+&emsp; &emsp; Example: Maximum allowed time is change to 2 hours and 30 min. That means, workload is allowed to run for a maximum duration of 2 hr and 30 min. 
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/37e42e06-6f42-48af-b3e2-062cd3f97a1d)
 
 
- 6. Click **Next** to continue with default script.
- 
-    **Note**: Default script is for 8 GPUs
+&emsp; &emsp; Once the workload is launched, user cannot change the total workload time. It has to be configured before running.
 
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/ce2ccd72-1286-458b-a28c-1939d5dd2669)
+&emsp; d. **Scheduled**
 
+&emsp; &emsp; Scheduling a job is optional. This step can be skipped if you are trying to run the job immediately.
+&emsp; &emsp; **Scheduled** field can be used to schedule the job for desired date and time which can be made reccuring daily or weekly.
+&emsp; &emsp; To schedule a job, Click the below toggle button
 
- 7. Select the allowed run time. The number of GPUs should be 8. Here, we have selected the run time as 1 hour, number of GPU’s as 8 and telemetry is enabled.
-    Click on **Next**
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/5ce78a5a-dc51-4b31-ab8f-ccccaf3a997d)
 
-  ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/0605bc6f-7136-4b7b-9d79-3faf33a444d0)
-   
+&emsp; &emsp; The time which the workload has to be triggered, How frequently the workload has to be triggered i.e, how many days per week or on which week days can be defined under **Scheduled** field.
 
- 8. Select the cluster and desired queue to run the job. In this case **1CN128C8G2H_2IB_MI210_SLES15** is selected. Click on **Next**
+&emsp; &emsp; Example1: 
+
+&emsp; &emsp; Here, workload will be run for every two days at time 15:30. Last day is 9/20/2023 after which workload will not trigger.
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/e3d4152f-2007-4fac-86b8-8ed77f7d10fa)
+
+&emsp; &emsp; Example2: 
+
+&emsp; &emsp; Here, workload will trigger every tuesday and wednesday at time 19:15. Workload will not trigger after 9/21/2023.
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/4edb9383-20f8-44b1-bca7-8466b9a8c3e2)
+
+&emsp; e. **Container Configuration**
+
+&emsp; &emsp; The number of GPUS required for the workload has to be selected in this step. It should be selected based on the run script provided in the **Application Configuration** page for HPC applications whereas for AI/ML applications, GPUs should be selected as required by the user.
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/e64c34ac-c5d2-4894-8b5f-ca4e809be52f)
+
+Click **Next** to proceed.
+
+## Select Compute
+
+Based on the number of GPUs selected in previous step, list of available queues will be displayed. Based on accelerator type and OS, required queue can be selected in this step. 
+
+One of the nodes in the selected queue will be assigned for workload based on availability. If node is occupied, workload goes into pending state. Once the node is available, workload will start running.
+
+**Note**: In this case, **1CN128C8G2H_2IB_MI210_SLES15** is selected.
 
   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/6063268b-227c-4a2f-8967-456f69ed1b41)
-  
 
- 9. Review all configurations and click on **Run Workload**
+Click on **Next**
+
+## Review Workload Submission
+
+Review all the configurations which are selected in the previous steps.
+
+Click on **Change** button of any of the sections in order to change the configurations if required.
  
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/1953602c-4d0f-481d-b42e-5ddfc8ecae39)
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/854b206a-c5a8-452a-b2cc-16e99dbadb94)
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/854f7e2e-2c5b-47de-a453-6b2ea7ff3728)
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/de586d6f-87ad-4e9d-8c4e-b6ebd9a3e49c)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/1953602c-4d0f-481d-b42e-5ddfc8ecae39)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/854b206a-c5a8-452a-b2cc-16e99dbadb94)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/854f7e2e-2c5b-47de-a453-6b2ea7ff3728)
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/de586d6f-87ad-4e9d-8c4e-b6ebd9a3e49c)
+ 
+Click **RUN WORKLOAD**
+ 
 
 
- 10. Once the application execution is successful then the status gets changed to **'Completed'**
-     
-   ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/4f113aa6-f7ba-4c26-b62e-c3c22df8b552)
+10. Once the application execution is successful then the status gets changed to **'Completed'**
+    
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/4f113aa6-f7ba-4c26-b62e-c3c22df8b552)
    
