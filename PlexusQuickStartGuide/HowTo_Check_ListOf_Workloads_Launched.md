@@ -14,5 +14,5 @@
 
 3. The workloads run by the user shall be listed as shown in the following image.
 
-      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/c97fe533-df3d-4d98-9c51-1399b7a60255)
-   
+      ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/481f79ad-3ca7-4b38-a151-12a83b3d0051)
+  
