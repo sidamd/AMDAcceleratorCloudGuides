@@ -10,7 +10,7 @@ Login to **https://aac.amd.com/**.
 
 A workload can be launched by following the below 6 steps.
 
-## 1. **Select the desired Application**.
+## 1. Select the desired Application.
 
 The application for which the workload has to be run can be selected in this step. It can be done in two ways as mentioned below.
 
@@ -54,7 +54,7 @@ The application for which the workload has to be run can be selected in this ste
 
 &emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/b5f29f92-4981-42b6-b060-69774211f756" width="900">
 
-## Select Input Files
+## 2. Select Input Files
 
 The files required for the workload can be uploaded in this step.
 
@@ -72,9 +72,11 @@ The files required for the workload can be uploaded in this step.
 
 &emsp; <img src="https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/2b3c9085-2752-4cac-b2ed-6496a21d6ae8" width="900">
 
-## Application Configuration
+## 3. Application Configuration
 
 User can either continue with default script or enter custom commands into the following script fields. 
+
+&emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/ce2ccd72-1286-458b-a28c-1939d5dd2669)
 
 **Note:** Application configuration step will not be available for applications like pyTorch, tensorflow, Jammy etc.
 
@@ -82,21 +84,38 @@ User can either continue with default script or enter custom commands into the f
 
 &emsp; &emsp; In this step, commands which are required to be executed before creating containers can be added into **Pre-run Script** field.
 
-&emsp; a. **Run Script**
+&emsp; b. **Run Script**
 
 &emsp; &emsp; In this step, commands which are required to be executed in the container created can be added into **Run Script** field. Benchmarking script for 8 GPUs will be available by default for the selected application in this field. AMD Infinity hub can be referred for more benchmarking commands
 
-&emsp; a. **Post-run Script**
+&emsp; c. **Post-run Script**
 
 &emsp; &emsp; In this step, commands which are required to be executed after creating containers can be added into **Post-run Script** field.
 
-## Select Resources
+Click **Next**
+
+## 4. Select Resources
 
 Required inputs for workload like number of GPUs, maximum allowed run time, etc can be entered in this step.
 
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/0e444fb9-bc8c-4f72-b271-d5d89d2d180d)
+
+![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/ec881f53-0905-4669-ac67-bacbaf04e4e7)
+
+
 &emsp; a. **Queue oversubscribe**
 
+&emsp; &emsp; By default **Queue oversubscribe** will be disabled. 
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/82bbb3ef-0b9b-4a94-b693-428361f48cc3)
+
+&emsp; &emsp; Enabling **Queue oversubscribe** means GPUs allocated to the workload will be allowed to be shared among other workloads. 
+
 &emsp; b. **Telemetry enabled:**
+
+&emsp; &emsp; By default telemetry is enabled.
+
+&emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/32f4c796-5b4e-4d1f-96a3-a8fa5e1551f7)
 
 &emsp; &emsp; If telemetry is enabled, once workload is completed, performance tab will be shown. If disabled, performance tab will not be shown on opening completed/finished workload.
 
@@ -104,16 +123,15 @@ Required inputs for workload like number of GPUs, maximum allowed run time, etc 
 
 &emsp; c. **Maximum allowed runtime**
 
-&emsp; &emsp; The time for which workload is allowed to run should be specified in the **maximum allowed runtime** field. By default 1 hour will be selected.
+&emsp; &emsp; The time for which workload is allowed to run should be specified in the **Maximum allowed runtime** field. By default 1 hour will be selected.
 
-&emsp; &emsp; If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed **maximum allowed runtime**.
+&emsp; &emsp; If maximum allowed run time is 1 hour, it implies, workload will run for 1 hour and then it will be automatically stopped after 1 hour as it will not be allowed to exceed **Maximum allowed runtime**.
 
-&emsp; &emsp; Based on the time required for workload, user should change the **maximum allowed runtime**.
+&emsp; &emsp; Based on the time required for workload, user should change the **Maximum allowed runtime**.
 
-&emsp; &emsp; Example: Maximum allowed time is change to 2 hours and 30 min. That means, workload is allowed to run for a maximum duration of 2 hr and 30 min. 
+&emsp; &emsp; Example: Maximum allowed time is changed to 2 hours and 30 min. That means, workload is allowed to run for a maximum duration of 2 hr and 30 min. 
 
 &emsp; &emsp; ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137475062/37e42e06-6f42-48af-b3e2-062cd3f97a1d)
-
 
 &emsp; &emsp; Once the workload is launched, user cannot change the total workload time. It has to be configured before running.
 
@@ -147,7 +165,7 @@ Required inputs for workload like number of GPUs, maximum allowed run time, etc 
 
 Click **Next** to proceed.
 
-## Select Compute
+## 5. Select Compute
 
 Based on the number of GPUs selected in previous step, list of available queues will be displayed. Based on accelerator type and OS, required queue can be selected in this step. 
 
@@ -159,7 +177,7 @@ One of the nodes in the selected queue will be assigned for workload based on av
 
 Click on **Next**
 
-## Review Workload Submission
+## 6. Review Workload Submission
 
 Review all the configurations which are selected in the previous steps.
 
@@ -171,10 +189,10 @@ Click on **Change** button of any of the sections in order to change the configu
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/de586d6f-87ad-4e9d-8c4e-b6ebd9a3e49c)
  
 Click **RUN WORKLOAD**
- 
+
+The workload will start running once the node is available. Please refer [HowTo_Monitor_Workloads](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/blob/naimisha/PlexusQuickStartGuide/HowTo_Monitor_Workload.md) to understand the workload status.
 
 
-10. Once the application execution is successful then the status gets changed to **'Completed'**
+Once the application execution is successful then the status gets changed to **'Completed'**
     
 ![image](https://github.com/amddcgpuce/AMDAcceleratorCloudGuides/assets/137474607/4f113aa6-f7ba-4c26-b62e-c3c22df8b552)
-   
