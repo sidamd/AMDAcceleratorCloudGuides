@@ -50,7 +50,7 @@ Here's a template for an `SBATCH` file for a 1 GPU workload on AAC Plano Slurm c
 source /etc/profile.d/modules.sh
 source /shared/share/aac1plano.modules.bash
 module purge
-module load rocm-5.6.0
+module load rocm-5.6.1
 ```
 The line `module load rocm-5.6.0` loads the ROCm 5.6 environment and related libraries built for ROCm 5.6.
 ## How to Check a Queued Job Status
@@ -78,7 +78,7 @@ ssh –J –A <USERID>@aac1.amd.com  <USERID>@<COMPUTENODE_HOSTNAME>
 # How to Set up ROCm Environment on the Compute Node
 After `ssh` to the compute node, load the ROCm environment using:
 ```
-module load rocm-5.6.0
+module load rocm-5.6.1
 ```
 The ROCm environment module should be loaded from each SSH session.
 
@@ -94,9 +94,9 @@ $ scl enable gcc-toolset-11 bash
 ```
 
 ## How to Use Podman to run Docker Containers
-To start `amddcgpuce/rocm:5.6.0-ub22` docker in interactive mode using `podman` with `$HOME` mounted as `/workdir` inside docker container
+To start `amddcgpuce/rocm:5.6.1-ub22` docker in interactive mode using `podman` with `$HOME` mounted as `/workdir` inside docker container
 ```
-podman run -it --privileged --network=host --ipc=host -v $HOME:/workdir -v /shareddata:/shareddata -v /shared:/shared --workdir /workdir docker://amddcgpuce/rocm:5.6.0-ub22 bash
+podman run -it --privileged --network=host --ipc=host -v $HOME:/workdir -v /shareddata:/shareddata -v /shared:/shared --workdir /workdir docker://amddcgpuce/rocm:5.6.1-ub22 bash
 ```
 This will pull the docker image, start an interactive session with current work directory set to /workdir and start a bash shell.
 
