@@ -171,22 +171,24 @@ Ex: salloc -N 4 --cpus-per-task=16 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p
 #### Allocate 2-node MI250 cluster. Ex: 2-node MI250 Ubuntu 22
 ```
 salloc -N 2 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p <QUEUE_NAME>
-Ex: salloc -N 2 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p 1CN96C8G1H_4IB_MI250_Ubuntu22
+Ex: salloc -N 2 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 -p 1CN96C8G1H_4IB_MI250_Ubuntu22
 ```
 #### Allocate 4-node MI250 cluster
 ```
 salloc -N 4 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p <QUEUE_NAME>
-Ex: salloc -N 4 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p 1CN96C8G1H_4IB_MI250_Ubuntu22
+Ex: salloc -N 4 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 -p 1CN96C8G1H_4IB_MI250_Ubuntu22
 ```
 #### Allocate 8-node MI250 cluster
 ```
 salloc -N 8 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p <QUEUE_NAME>
-Ex: salloc -N 8 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 –p 1CN96C8G1H_4IB_MI250_Ubuntu22
+Ex: salloc -N 8 --cpus-per-task=12 --mem=0 --gres=gpu:8 --ntasks-per-node=8 -p 1CN96C8G1H_4IB_MI250_Ubuntu22
 ```
 # FAQ
 #### Q What does the `Invalid account or account/partition combination specified` error mean?
 It means that user does not have access to nodes behind the `<QUEUE_NAME>` specified.
 The errors `salloc: error: Job submit/allocate failed: Invalid account or account/partition combination specified` and `sbatch: error: Batch job submission failed: Invalid account or account/partition combination specified` indicates a `<QUEUE_NAME>` was specified to which the user does not have access permissions
+
+Sometimes, copy-paste of the command may introduce invalid character which could cause the error. Please type in the commands manually to verify whether that works.
 
 #### Q: What does the `error: invalid partition specified` error message mean?
 It means that the `<QUEUE_NAME>` specified does not exist. Run `sinfo –o “%P%` to list valid queues.
