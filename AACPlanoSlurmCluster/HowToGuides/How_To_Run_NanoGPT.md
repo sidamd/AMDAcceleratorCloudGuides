@@ -37,7 +37,7 @@ git clone https://github.com/karpathy/nanoGPT.git
 ```
 Change to `nanoGPT` directory 
 ```
-cd $HOME/nanoGPT/
+cd nanoGPT/
 ```
 Prepare GPT shakespeare character dataset 
 ```
