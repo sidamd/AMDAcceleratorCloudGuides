@@ -1,6 +1,6 @@
 # How To Build and Run NanoGPT on Plano Slurm Cluster
 - https://github.com/karpathy/nanoGPT
-- Examples below use `1CN128C8G2H_2IB_MI210_Ubuntu22` slurm partition which has MI250 compute nodes. 
+- Examples below use `1CN128C8G2H_2IB_MI210_Ubuntu22` slurm partition which has MI210 compute nodes. 
 # Setup Environment 
 Allocate and SSH to a node from the partition `1CN128C8G2H_2IB_MI210_Ubuntu22`
 ```
