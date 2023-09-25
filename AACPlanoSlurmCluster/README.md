@@ -52,7 +52,7 @@ source /shared/share/aac1plano.modules.bash
 module purge
 module load rocm-5.6.1
 ```
-The line `module load rocm-5.6.0` loads the ROCm 5.6 environment and related libraries built for ROCm 5.6.
+The line `module load rocm-5.6.1` loads the ROCm 5.6 environment and related libraries built for ROCm 5.6.
 ## How to Check a Queued Job Status
 Use `squeue` command shown below to view submitted job status
 ```
@@ -154,6 +154,7 @@ At the prompt, `Proceed ([y]/n)?` enter ‘y’ to continue creation of Conda en
 conda activate pytorch2.0_py3.8_demo
 ```
 6. Pip install PyTorch for ROCm wheel
+   - https://pytorch.org/get-started/locally/
 ```
 pip3 --no-cache-dir install torch==2.0.1 torchvision==0.15.2 -f https://repo.radeon.com/rocm/manylinux/rocm-rel-5.6/
 ```
